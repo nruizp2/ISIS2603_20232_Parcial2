@@ -1,5 +1,11 @@
 # Parcial2
 
+
+
+Nicolás Ruiz Pérez - 202123608 - n.ruizp2@uniandes.edu.co
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Development server
