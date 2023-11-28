@@ -1,0 +1,35 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<div class="container-fluid">
+  <div class="row"> 
+    <div class="col-md-8"> 
+      <table class="table">
+        <thead style="text-align: center;">
+          <tr>
+            <th><b>#</b></th>
+            <th><b>Nombre</b></th>
+            <th><b>Plataforma</b></th>
+            <th><b>Lanzamiento</b></th>
+            <th><b>Duración (h)</b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="text-align: center;" class="table-light" *ngFor="let cur of cursos">
+            <td>{{cur.id}}</td>
+            <td>
+              <dd><a (click)="mostrar(cur)" style="color: #4ba6fc; text-align: center;">{{cur.title}}</a></dd>
+            </td>
+            <td>{{cur.platform}}</td>
+            <td>{{cur.launch_year}}</td>
+            <td>{{cur.duration_hours}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>{{stringOfrecen}}</p>
+    </div>
+    <div class="col-3" *ngIf="haySelected"> 
+      <app-detalle-curso [selected]="selected"></app-detalle-curso>
+    </div>
+  </div>
+</div>

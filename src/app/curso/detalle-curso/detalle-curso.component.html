@@ -1,0 +1,11 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<div class="card">
+  <img class="card-img-top"  src="{{selected.image}}">
+  <div class="card-body">
+    <h5 class="card-title"  style="text-align: center;">{{selected.title}}</h5>
+    <p class="card-text">{{selected.description}}</p>
+    <p class="card-text" *ngIf="selected.offers_certificate == true" style="text-align: center; color: #118C25; font-size: larger;">Sí ofrece certificado</p>
+  </div>
+</div>
